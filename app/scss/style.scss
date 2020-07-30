@@ -1,0 +1,477 @@
+@import "fonts";
+@import "global";
+@import "vars";
+
+
+
+// header start
+.header{
+    background-color: #ecf6fe;
+}
+
+.header__info{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    color: #1f98ff;
+    font-family: "JosefinSans";
+    font-size: 15px;
+    @include f300;
+    padding-bottom: 17px;
+    padding-top: 17px;
+    display: flex;
+    justify-content: space-between;
+    span{
+       @include f400;
+    }
+    
+}
+
+.header__info-social{
+    a{
+        margin-right: 18px;
+    }
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat";
+    padding-bottom: 20px;
+}
+
+.header__logo {
+    width: 127px;
+    height: 44px;
+    margin-top: 65px;
+}
+
+.bg-image{
+    width: 100%;
+    height: 918px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu{
+        a{
+            padding: 15px 30px;
+            color: #31a1ff;
+            font-size: 14px;
+            @include f400;
+            &:hover {
+                color: #fff;
+                background-color: #008aff;
+                border-radius: 23px;
+            }            
+        }
+        li {
+            display: inline-block;
+            margin-top: 65px;
+        }
+
+        li+li {
+            margin-left: 15px;
+        }
+
+        li:last-child{
+            a{
+            color: #000;
+            background-color: #ffe824;
+            border-radius: 23px;
+                &:hover {
+                    color: #000;
+                    background-color: #ffe824;
+                    border-radius: 23px;
+                }
+            }
+        }
+}
+
+.header__title-slogan{
+    max-width: 575px;
+    margin-top: 204px;
+    font-size: 33px;
+    @include f300;
+    color: rgb(0, 138, 255);
+}
+
+.header__title-tagline{
+    max-width: 750px;
+    margin-top: 35px;
+    font-size: 68px;
+    @include f400;
+    color: rgb(19, 40, 126)
+}
+
+.header__title-info{
+    max-width: 675px;
+    margin-top: 65px;
+    font-size: 20px;
+    @include f300;
+    color: rgb(71, 71, 71);
+    line-height: 1.75;
+}
+
+.header__title-button{
+    color: #000;
+    button{
+    margin-top: 53px;
+    border: none;
+    color: #000;
+    background-color: #ffe824;
+    border-radius: 23px;
+    padding: 15px 42px;
+    outline: none;
+    cursor: pointer;
+    }
+}
+
+// header end 
+
+//product item start
+
+.items{
+    margin-bottom: 170px;
+}
+
+.product__items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    margin-bottom: 100px;
+}
+
+.product__item{
+    position: relative;
+    width: 515px;  
+}
+
+.product__item + .product__item {
+    margin-left: 135px;
+}
+
+.product__item-tagline{
+    font-size: 33px;
+    color: rgb(0, 138, 255);
+    @include f400;
+    text-align: center;
+}
+
+.product__item-slogan{
+    margin-bottom: 65px;
+    font-size: 20px;
+    color: rgb(71, 71, 71);
+    @include f400;
+    text-align: center;
+}
+
+.product__item-info{
+    margin-top: 65px;
+    font-size: 20px;
+    font-family: "Myriad Pro";
+    line-height: 35px;
+    color: rgb(71, 71, 71)
+}
+
+.product__item-advantages{
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    li{
+        list-style-type: disc;
+        list-style-position: inside;
+        color: rgb(0, 138, 255);
+        line-height: 25px;
+    }
+    span{
+        margin-left: -8px;
+        @include f300;
+        font-size: 17px;
+    }
+}
+
+.product__item-button{
+    button{
+    margin-bottom: 160px;
+    margin-top: 50px;
+    border: none;
+    color: #000;
+    background-color: #ffe824;
+    border-radius: 23px;
+    padding: 15px 42px;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    }
+}
+
+//product item end
+
+//product advantages start
+
+.advantage{
+    border-top: 1px solid #d8d8de;
+}
+
+.product__adv{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.product__adv-item{
+    text-align: center;
+    width: 245px;
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.prev{
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-right: 30px solid #87ceeb;
+    border-bottom: 20px solid transparent;
+    margin: auto;
+    border-radius: 3px;
+}
+
+
+
+.next{
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-right: 30px solid #87ceeb;
+	border-bottom: 20px solid transparent;
+    margin: auto;
+    border-radius: 3px;
+    transform: rotate(180deg);
+    
+}
+
+
+.product__adv-tagline{
+    margin-top: 220px;
+    text-align: center;
+    font-size: 33px;
+    @include f400;
+    color: rgb(19, 40, 126);
+}
+
+.product__adv{
+    margin-top: 110px;
+    margin-bottom: 220px;
+}
+
+.product__adv-item-tagline{
+    margin-top: 40px;
+    font-size: 20px; 
+    color: rgb(19, 40, 126);
+    @include f400;
+}
+
+.product__adv-item-info{
+    margin-top: 40px;
+    font-size: 16px;
+    color: rgb(71, 71, 71);
+    @include f300;
+    line-height: 30px;
+}
+
+
+//product advantages end
+
+//rewivs start
+.rewivs__item{
+    img{
+        margin-top: 50px;
+    }
+}
+.rewivs__bg{
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.rewivs__tagline{
+    padding-top: 90px;
+    text-align: center;
+    font-size: 33px;
+    @include f400;
+    color: rgb(19, 40, 126);
+}
+
+.rewivs__info{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    text-align: center;
+    max-width: 675px;
+    line-height: 30px;
+}
+.rewivs__user-name{
+    margin-top: 45px;
+    color: #f7b74d;
+    line-height: 30px;
+}
+//rewivs end
+
+//price plan start
+
+.price__carts-tagline{
+    margin-top: 225px;
+    font-size: 33px;
+    color: rgb(19, 40, 126);
+    font-family: "Myriad Pro";
+    text-align: center;
+}
+
+.price__carts-descr{
+    font-size: 18px;
+    color: rgb(71, 71, 71);
+    @include f300;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    text-align: center;
+    max-width: 675px;
+    line-height: 30px;
+}
+
+.price__carts-items{
+    margin-top: 70px;
+    margin-bottom: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price__carts-item{
+    width: 340px;
+    border: 1px solid rgb(235, 235, 235);
+    box-shadow: 0px 16px 68px 0px rgba(179, 179, 179, 0.15);
+    border-radius: 13px;
+    position: relative;
+}
+
+.price__carts-item + .price__carts-item{
+    margin-left: 74px;
+}
+
+.price__carts-item-tag{
+    margin-top: 25px;
+    font-size: 28px;
+    font-family: "Myriad Pro";
+    color: rgb(71, 71, 71);
+    text-align: center;
+}
+
+.price__carts-item-price{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 119px;
+    color: rgb(0, 138, 255);
+    span{
+        font-size: 24px;
+        color: rgb(71, 71, 71);
+        position: absolute;
+        top: 75px;
+    }
+}
+
+.price__carts-item-hour{
+    text-align: center;
+    font-size: 16px;
+    color: rgb(71, 71, 71);
+    @include f400;
+}
+
+.price__carts-item-descr{
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 40px;
+    font-size: 17px;
+    @include f400;
+    color: rgb(71, 71, 71);
+}
+
+.price__carts-button{
+    text-align: center;
+    display: block;
+    color: #000;
+    margin-top: 27px;
+    margin-bottom: 20px;
+    button{
+        background-color: #ffe824;
+        border-radius: 23px;
+        border-radius: 23px;
+        padding: 15px 42px;
+        outline: none;
+        cursor: pointer;
+        border: none;
+    }
+}
+
+//price plan end
+
+//footer start
+
+.footer{
+    border-top: 1px solid #31a1ff;
+    margin-bottom: 50px;
+}
+
+//about us page start
+
+.about-us{
+    margin-bottom: 350px;
+}
+
+.about-us__title{
+    margin-top: 70px;
+    text-transform: uppercase;
+    @include f400;
+    text-align: center;
+    font-size: 30px;
+    color: #31a1ff;
+}
+
+.about-us__descr{
+    @include f300;
+    margin-top: 20px;
+}
+
+
+// about us page end
+
+//contact page start
+
+.map-yandex{
+    margin: 20px auto;
+    text-align: center;
+}
+
+.contact__descr{
+    @include f400;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    color: #31a1ff; 
+}
+
+//contact page end
