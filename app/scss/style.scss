@@ -75,18 +75,7 @@
             margin-left: 15px;
         }
 
-        li:last-child{
-            a{
-            color: #000;
-            background-color: #ffe824;
-            border-radius: 23px;
-                &:hover {
-                    color: #000;
-                    background-color: #ffe824;
-                    border-radius: 23px;
-                }
-            }
-        }
+
 }
 
 .header__title-slogan{
@@ -116,7 +105,6 @@
 
 .header__title-button{
     color: #000;
-    button{
     margin-top: 53px;
     border: none;
     color: #000;
@@ -125,7 +113,6 @@
     padding: 15px 42px;
     outline: none;
     cursor: pointer;
-    }
 }
 
 // header end 
@@ -193,7 +180,6 @@
 }
 
 .product__item-button{
-    button{
     margin-bottom: 160px;
     margin-top: 50px;
     border: none;
@@ -206,7 +192,6 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    }
 }
 
 //product item end
@@ -290,9 +275,15 @@
 //product advantages end
 
 //rewivs start
+.rewivs__items{
+    display: flex;
+}
+
 .rewivs__item{
     img{
         margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 .rewivs__bg{
@@ -325,6 +316,7 @@
     color: #f7b74d;
     line-height: 30px;
 }
+
 //rewivs end
 
 //price plan start
@@ -410,20 +402,19 @@
 }
 
 .price__carts-button{
-    text-align: center;
     display: block;
     color: #000;
     margin-top: 27px;
     margin-bottom: 20px;
-    button{
-        background-color: #ffe824;
-        border-radius: 23px;
-        border-radius: 23px;
-        padding: 15px 42px;
-        outline: none;
-        cursor: pointer;
-        border: none;
-    }
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffe824;
+    border-radius: 23px;
+    border-radius: 23px;
+    padding: 15px 42px;
+    outline: none;
+    cursor: pointer;
+    border: none;
 }
 
 //price plan end
